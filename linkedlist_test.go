@@ -210,24 +210,24 @@ func TestRemoveItemMiddle(t *testing.T) {
 	list.PushBack(4)
 	list.PushBack(3)
 
-	item2 := item
+	// item2 := item
 	item.Remove()
 
 	if list.Len() != 5 {
 		t.Fatal("List length is not right")
 	}
 
-	for { // bad
-		if item2.Next() == nil {
-			break
-		}
-		item2 = item2.Next()
-		item2.Remove()
-	}
+	// for { // bad
+	// 	if item2.Next() == nil {
+	// 		break
+	// 	}
+	// 	item2 = item2.Next()
+	// 	item2.Remove()
+	// }
 
-	if list.Len() != 2 {
-		t.Fatal("List length is not right")
-	}
+	// if list.Len() != 2 {
+	// 	t.Fatal("List length is not right")
+	// }
 
 }
 

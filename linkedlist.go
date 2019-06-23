@@ -42,6 +42,10 @@ func (i *Item) Remove() {
 	}
 
 	i.list.length--
+
+	i.next = nil
+	i.prev = nil
+	i.list = nil
 }
 
 func (l *List) Len() uint64 {
